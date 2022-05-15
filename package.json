@@ -5,12 +5,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "test": "vitest",
+    "test": "vitest run",
     "preview": "vite preview",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "lint": "eslint 'src/**/*.{js,ts,vue}'"
   },
   "pre-commit": [
-    "prettier-format",
+    "lint",
     "test"
   ],
   "dependencies": {
