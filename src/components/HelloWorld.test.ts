@@ -6,10 +6,10 @@ test('it should display text passed as prop', () => {
     HelloWorld,
     {
       props: {
-        msg: 'Hi vitest'
+        msg: 'Hi vitest2'
       }
     }
   );
 
-  getByText('Hi vitest');
+  getByText('Hi vitest2');
 });
